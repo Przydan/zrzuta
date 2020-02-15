@@ -21,6 +21,16 @@ public class WhipRound {
     @ManyToOne(targetEntity = User.class)
     private User user;
 
+
+    public WhipRound(String title, String description, LocalDate startDate, LocalDate endDate, BigDecimal amount, User user) {
+        this.title = title;
+        this.description = description;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.amount = amount;
+        this.user = user;
+    }
+
     public WhipRound() {
     }
 
